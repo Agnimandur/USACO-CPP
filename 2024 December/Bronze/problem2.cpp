@@ -6,8 +6,6 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define pii pair<int,int>
 
 int X[1000][1000];
 int Y[1000][1000];

@@ -6,8 +6,6 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define pii pair<int,int>
 
 int freq[26][26];
 int maxfreq[26][26];

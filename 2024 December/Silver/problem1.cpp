@@ -7,7 +7,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-#define pii pair<int,int>
 
 int main() {
     cin.tie(0)->sync_with_stdio(0);

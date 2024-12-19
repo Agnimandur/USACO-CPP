@@ -6,8 +6,6 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define pii pair<int,int>
 
 int intpow(int a, int b) {
     if (b == 0) return 1;

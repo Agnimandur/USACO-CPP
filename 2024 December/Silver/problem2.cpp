@@ -10,9 +10,7 @@ using order_statistic_tree = tree<
     rb_tree_tag,                   // Specifies the underlying tree structure
     tree_order_statistics_node_update // Enables order-statistics functionality
 >;
-
 using namespace std;
-#define ll long long
 #define pii pair<int,int>
 
 int main() {
