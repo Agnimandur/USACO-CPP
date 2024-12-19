@@ -4,35 +4,10 @@
  * @brief https://www.youtube.com/watch?v=cl41SXh0Evg
 */
 
-/********   All Required Header Files ********/
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <sstream>
-#include <queue>
-#include <deque>
-#include <bitset>
-#include <iterator>
-#include <list>
-#include <stack>
-#include <map>
-#include <set>
-#include <functional>
-#include <numeric>
-#include <utility>
-#include <limits>
-#include <time.h>
-#include <math.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <assert.h>
+#include <bits/stdc++.h>
 using namespace std;
 #define ll long long
 #define pii pair<int,int>
-const int INF = 2000000000;
-const ll MOD = 998244353;
 
 int freq[26][26];
 int maxfreq[26][26];
