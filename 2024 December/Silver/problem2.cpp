@@ -24,7 +24,7 @@ int main() {
             int tree; cin >> tree;
             available.insert(tree);
         }
-        order_statistic_tree<pii> used;
+        order_statistic_tree<pii> used; // the trees in use
 
         vector<array<int,3>> restrictions;
         for (int i = 0; i < K; i++) {
@@ -40,7 +40,7 @@ int main() {
             // the number of trees in use from L to R inclusive.
             int cover = used.order_of_key({R+1,0}) - used.order_of_key({L,0});
             while (cover < T) {
-                int x = *(--available.upper_bound(R));
+                int x = *(--available.upper_bound(R)); //the largest available tree <= R.
                 used.insert({x, time}); time++;
                 available.erase(available.find(x));
                 cover++;

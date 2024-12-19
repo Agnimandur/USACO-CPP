@@ -101,11 +101,6 @@ int main() {
         int j = ops[q][1];
         belts[i][j] = -1;
 
-        if (usable[i][j]) {
-            allAns.push_back(ans);
-            continue; // Cell is already usable so nothing changes
-        }
-
         //The current cell is usable if it connects to a free cell.
         for (int dir = 0; dir < 4; dir++) {
             pii newCell = move(i, j, dir);
