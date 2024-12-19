@@ -38,12 +38,11 @@ int main() {
         int time = 0;
         for (const auto& [L, R, T]: restrictions) {
             // the number of trees in use from L to R inclusive.
-            int cover = used.order_of_key({R+1,0}) - used.order_of_key({L,0});
-            while (cover < T) {
+            int needed = T - (used.order_of_key({R+1,0}) - used.order_of_key({L,0}));
+            while (needed--) {
                 int x = *(--available.upper_bound(R)); //the largest available tree <= R.
                 used.insert({x, time}); time++;
                 available.erase(available.find(x));
-                cover++;
             }
         }
         cout << available.size() << '\n';
